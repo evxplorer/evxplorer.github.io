@@ -32,6 +32,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- count API is called here-->
+    <script async src="https://api.countapi.xyz/hit/www.evxplorer.co.in/300d087a-6792-42f2-9471-247507a723c6?callback=websiteVisits"></script>
 </head>
 
 <body>
@@ -705,6 +708,8 @@
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <br>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>evxplorer@gmail.com</p>
                 </div>
                 <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Services</h4>
@@ -742,7 +747,10 @@
     <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-2"><i class="fa fa-eye me-1"></i><span id="visits"></span> Visitors</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
                     &copy; <a class="border-bottom" href="#">evxplorer.co.in</a>, All Right Reserved.
                 </div>
                 <!-- <div class="col-md-6 text-center text-md-end">
@@ -774,6 +782,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <!-- Visiter Counter JavaScript -->
+    <script src="js/visitorCount.js"></script>
 </body>
 
 </html>
