@@ -50,9 +50,11 @@
 }
 @media (min-width: 768px){
 #aboutUs .col-md-3{flex:0 0 auto;width:25%;}
+#aboutUs .col-md-6{flex:0 0 auto;width:50%;}
 }
 @media (min-width: 992px){
 #aboutUs .col-lg-4{flex:0 0 auto;width:33.33333333%;}
+#aboutUs .col-lg-6{flex:0 0 auto;width:50%;}
 #aboutUs .col-lg-8{flex:0 0 auto;width:66.66666667%;}
 }
 #aboutUs .btn{display:inline-block;font-weight:400;line-height:1.5;color:#212529;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:0.375rem 0.75rem;font-size:1rem;border-radius:0.25rem;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;}
@@ -80,9 +82,10 @@
 #aboutUs .bg-light{--bs-bg-opacity:1;background-color:rgba(var(--bs-light-rgb), var(--bs-bg-opacity))!important;}
 #aboutUs .rounded-circle{border-radius:50%!important;}
 #aboutUs p{line-height:1.75;}
-#aboutUs .page-section{padding:6rem 0;}
+#aboutUs .page-section{padding:4rem 0;}
 #aboutUs .page-section h2.section-heading{font-size:2.5rem;margin-top:0;margin-bottom:1rem;}
-#aboutUs .page-section h3.section-subheading{font-size:1rem;font-weight:400;font-style:italic;font-family:"Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";margin-bottom:4rem;}
+#aboutUs .page-section h2.section-subheading{font-size:2rem;margin-top:1rem;margin-bottom:1rem;}
+#aboutUs .page-section h3.section-subheading{font-size:1rem;font-weight:400;font-style:italic;font-family:"Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";margin-bottom:1.5rem;}
 @media (min-width: 768px){
 #aboutUs section{padding:9rem 0;}
 }
