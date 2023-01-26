@@ -82,7 +82,7 @@
 #aboutUs .bg-light{--bs-bg-opacity:1;background-color:rgba(var(--bs-light-rgb), var(--bs-bg-opacity))!important;}
 #aboutUs .rounded-circle{border-radius:50%!important;}
 #aboutUs p{line-height:1.75;}
-#aboutUs .page-section{padding:4rem 0;}
+#aboutUs .page-section{padding: 1rem 0rem 2rem 0rem};
 #aboutUs .page-section h2.section-heading{font-size:2.5rem;margin-top:0;margin-bottom:1rem;}
 #aboutUs .page-section h2.section-subheading{font-size:2rem;margin-top:1rem;margin-bottom:1rem;}
 #aboutUs .page-section h3.section-subheading{font-size:1rem;font-weight:400;font-style:italic;font-family:"Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";margin-bottom:1.5rem;}
@@ -131,7 +131,7 @@
 }
 #aboutUs .team-member{margin-bottom:3rem;text-align:center;}
 #aboutUs .team-member img{width:14rem;height:14rem;border:0.5rem solid rgba(0, 0, 0, 0.1);}
-#aboutUs .team-member h4{margin-top:1.5rem;margin-bottom:0;}
+#aboutUs .team-member h4{margin-top:1.5rem;margin-bottom:1rem;}
 #aboutUs .img-brand{height:2.75rem;}
 /*! CSS Used fontfaces */
 @font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:normal;font-display:auto;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/webfonts/fa-brands-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/webfonts/fa-brands-400.eot#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/webfonts/fa-brands-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/webfonts/fa-brands-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/webfonts/fa-brands-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/webfonts/fa-brands-400.svg#fontawesome) format("svg");}
