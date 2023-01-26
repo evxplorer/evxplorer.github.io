@@ -480,6 +480,53 @@ h6,
 }
 
 
+/*** Recent Updates ***/
+#recent-updates {
+    padding: 2rem 0;
+  }
+  
+  #recent-updates .card {
+    min-height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  #recent-updates .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #recent-updates .card h4 {
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  
+  #recent-updates .card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  #recent-updates .card .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+  @media (min-width:768px) {
+    #recent-updates .card {
+      min-height: 400px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width:768px) {
+    #recent-updates .card {
+      min-height: 300px;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+
 /*** Footer ***/
 .footer .btn.btn-link {
     display: block;
