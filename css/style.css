@@ -524,7 +524,17 @@ h6,
       margin-bottom: 20px;
     }
   }
+
   
+/*** GAIN page GOOGLE FORM ***/
+.content iframe{
+    height:1000px;
+}
+@media (max-width:768px) {
+.content iframe{
+    height:1390px;
+}
+}
 
 
 /*** Footer ***/
