@@ -73,7 +73,18 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-
-    
+    //Iframe height and width
+    $(document).ready(function() {
+        function setIframeSize() {
+            var imgWidth = $("#img-height").width();
+            var imgHeight = $("#img-height").height();
+            $("#iframe-height").width(imgWidth);
+            $("#iframe-height").height(imgHeight);
+        }
+        setIframeSize();
+        $(window).resize(function() {
+            setIframeSize();
+        });
+    });
 })(jQuery);
 
