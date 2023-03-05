@@ -1,5 +1,5 @@
 body{
-    background-color: #f4f7f6;
+    background-color: #f4f7f6; 
 }
 .card {
     background: #fff;
@@ -256,4 +256,3 @@ body{
         padding: 30px
     }
 }
-#more1,#more2,#more3,#more4 {display: none;}
