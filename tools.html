@@ -133,7 +133,7 @@
     <div id="main-content" class="blog-page">
         <div class="container">
             <div class="row clearfix">
-                <div class="col-lg-8 col-md-12 left-box">
+                <div class="col-lg-8 col-md-12 left-box"id="page-content">
                     <div class="card single_post">
                         <div class="body">
                             <div class="img-post">
@@ -142,64 +142,22 @@
                             <h3><a>Choose Your Electric Vehicle</a></h3>
                             <p><span>Here’s our tool to help you decide which electric vehicle model best suits your needs.</span></p>
                         </div>
-                    </div>
-    
-                    <div class="card single_post">
-                        <div class="body">
-                            <div class="img-post">
-                                <img class="d-block img-fluid" src="https://www.bootdey.com/image/800x280/FFB6C1/000000" alt="First slide">
-                            </div>
-                            <h3><a>Home Charging Calculator</a></h3>
-                            <p><span>Here’s our home charging calculator to find out how long and how much it costs to charge an electric vehicle at the convenience of your home.</span></p>
-                        </div>
-                    </div>
-    
-                    <div class="card single_post">
-                        <div class="body">
-                            <div class="img-post">
-                                <img class="d-block img-fluid" src="https://www.bootdey.com/image/800x280/FFB6C1/000000" alt="First slide">
-                            </div>
-                            <h3><a>Public Charging Calculator</a></h3>
-                            <p><span>Here’s our tool to determine how much would it cost you to charge your electric vehicle at a slow or fast public charging station.</span></p>
-                        </div>
-                    </div>
-    
-                    <div class="card single_post">
-                        <div class="body">
-                            <div class="img-post">
-                                <img class="d-block img-fluid" src="https://www.bootdey.com/image/800x280/FFB6C1/000000" alt="First slide">
-                            </div>
-                            <h3><a>Journey Cost Calculator</a></h3>
-                            <p><span>You might need to charge both at home as well as public charging stations to meet your travel requirement. Here’s our tool that will help you to determine the running cost of your electric vehicle.</span></p>
-                        </div>
-                    </div>
-                                            
-                    <ul class="pagination pagination-primary">
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-                    </ul>                
+                    </div>              
                 </div>
                 <div class="col-lg-4 col-md-12 right-box">
-                    <!-- <div class="card">
+                    <div class="card">
                         <div class="header">
-                            <h2>Categories Clouds</h2>
+                            <h2>Available Tools</h2>
                         </div>
                         <div class="body widget">
-                            <ul class="list-unstyled categories-clouds m-b-0">
-                                <li><a href="javascript:void(0);">eCommerce</a></li>
-                                <li><a href="javascript:void(0);">Microsoft Technologies</a></li>
-                                <li><a href="javascript:void(0);">Creative UX</a></li>
-                                <li><a href="javascript:void(0);">Enterprise Mobility</a></li>
-                                <li><a href="javascript:void(0);">Website Design</a></li>
-                                <li><a href="javascript:void(0);">HTML5</a></li>
-                                <li><a href="javascript:void(0);">Infographics</a></li>
-                                <li><a href="javascript:void(0);">Wordpress Development</a></li>
+                            <ul class="list-unstyled categories-clouds">
+                                <li><a href="#" id="tool1" class="fetch-link" data-target="#page-content">Choose Your Electric Vehicle</a></li>
+                                <li><a href="#" id="tool2" class="fetch-link" data-target="#page-content">Home Charging Calculator</a></li>
+                                <li><a href="#" id="tool3" class="fetch-link" data-target="#page-content">Public Charging Calculator</a></li>
+                                <li><a href="#" id="tool4" class="fetch-link" data-target="#page-content">Journey Cost Calculator</a></li>
                             </ul>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="card">
                         <div class="header">
                             <h2>Latest Tools</h2>                        
@@ -208,14 +166,14 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="single_post">
-                                        <p class="m-b-0">HOME CHARGING CALCULATOR</p>
+                                        <p class="m-b-0">Home Charging Calculator</p>
                                         <span>Jan 22, 2023</span>
                                         <div class="img-post">
                                             <img src="https://www.bootdey.com/image/280x280/FFB6C1/000000" alt="Awesome Image">                                        
                                         </div>                                            
                                     </div>
                                     <div class="single_post">
-                                        <p class="m-b-0">JOURNEY COST CALCULATOR</p>
+                                        <p class="m-b-0">Journey Cost Calculator</p>
                                         <span>March 2, 2023</span>
                                         <div class="img-post">
                                             <img src="https://www.bootdey.com/image/280x280/FFB6C1/000000" alt="Awesome Image">                                            
@@ -320,8 +278,30 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+          // Attach click event to all links with class "fetch-link"
+          $(".fetch-link").click(function(event) {
+            // Prevent default link behavior
+            event.preventDefault();
+    
+            // Get the ID of the link clicked and the target div ID
+            var linkId = $(this).attr("id");
+            var targetId = $(this).data("target");
+    
+            // Fetch the corresponding page using AJAX
+            $.get("tools/" + linkId + ".html", function(data) {
+              // Replace content in target div with fetched HTML
+              $(targetId).html(data);
+            });
+          });
+        });
+    </script>
 </body>
 
 </html>
